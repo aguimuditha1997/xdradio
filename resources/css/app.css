@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+        --color-prime-color: #062663;
+        --color-secound-color: #18cfdb;
+        --color-third-color: #bbebfb;
+}
+
+.navbar-fixed {
+    @apply fixed z-[9999] bg-prime-color opacity-80;
+    backdrop-filter: blur(5px);
+    box-shadow: inset 0 -1px 0 0 rgba(0, 0, 0, 0.1)
+}
+
+.hamburger-line{
+    @apply w-[30px] h-[2px] my-2 block bg-third-color;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply  rotate-45;
+}
+.hamburger-active > span:nth-child(2) {
+    @apply scale-0;
+}
+
+.hamburger-active > span:nth-child(3) {
+    @apply  -rotate-45;
+}
