@@ -27,7 +27,7 @@
             <div class="container mx-auto">
                 <div class="flex item-center justify-between relative pt-4 pb-4">
                     <div class="px-4">
-                        <a href="#home" class="font-bold text-lg text-secound-color">XD Radio</a>
+                         <img src="{{asset('img/logo.png')}}" class=" max-w-full size-23 -my-5">
                     </div>
                     <div class="flex items-center px-4">
                         <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
@@ -64,25 +64,25 @@
         {{-- Navbar End --}}
 
         {{-- Hero Section Start --}}
-        <section id="home" class="pt-36  bg-prime-color relative">
-            <div class=" container mx-auto lg:flex ">
+        <section id="home" class="pt-40  bg-prime-color relative -z-2">
+            <div class=" container mx-auto lg:flex z-1 ">
                 <div class="flex flex-wrap lg:w-1/2">
                     <div class="w-full self-center px-4">
                         <h1 class="block text-4xl font-bold text-secound-color lg:text-5xl">XD RADIO YUDHA</h1>
                         <h2 class="font-medium text-slate-100 text-xl mb-5 italic mt-1 lg:text-2xl">Your Extra Ordinary Music Station</h2>
                         <p class=" text-slate-50 font-medium mb-10 leading-relaxed">Menemani kamu dengan Playlist yang bakal bikin suasana Good Mood dan kamu akan selalu Merasa Bahwa HARI INI IS A GOOD DAY !</p>
 
-                        <a href="#" class="text-base font-semibold text-white bg-secound-color rounded-full py-4 px-8 hover:shadow-lg hover:opacity-80 transition-300 ease-in-out">Stream Now</a>
+                        <a href="#" class="text-base font-semibold text-white  bg-secound-color rounded-full shadow-lg shadow-teal-600  py-4 px-8 hover:shadow-lg hover:opacity-80 transition-300 ease-in-out">Stream Now</a>
                     </div>
                 </div>
                 <div class="w-full self-end px-4 lg:w-1/2 mx-auto">
-                    <div class="mt-10">
-                        <img src="{{asset('img/hero.png')}}" class="max-w-full">
+                    <div class="mt-5">
+                        <img src="{{asset('img/hero.png')}}" class=" max-w-full size-140 lg:size-160">
                     </div>
                 </div>
             </div>
-            <span class="absolute bottom-0 ">
-                <img src="{{asset('img/hiasan4.png')}}" class="max-w-full inset-y-0 right-0 ">
+            <span class="absolute bottom-0 mx-auto w-full -z-1 ">
+                <img src="{{asset('img/hiasan4.png')}}" class="w-full  inset-y-0 right-0">
             </span>
         </section>
         {{-- Hero Section End --}}
